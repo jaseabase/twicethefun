@@ -1085,6 +1085,35 @@ footer {
   border-top: 2px dashed var(--border-strong);
 }
 
+.disclaimer-banner {
+  background: var(--purple-light);
+  border-top: 2px solid rgba(83,74,183,0.2);
+  border-bottom: 2px solid rgba(83,74,183,0.2);
+  padding: 14px 1.5rem;
+}
+.disclaimer-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.disclaimer-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.disclaimer-banner p {
+  font-size: 14px;
+  color: #3C3489;
+  line-height: 1.6;
+  margin: 0;
+}
+.disclaimer-banner strong {
+  font-weight: 800;
+}
+
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .content-layout { grid-template-columns: 1fr; }
@@ -1149,6 +1178,13 @@ footer {
   </div>
 </nav>
 
+<!-- DISCLAIMER BANNER -->
+<div class="disclaimer-banner">
+  <div class="disclaimer-inner">
+    <span class="disclaimer-icon">🔒</span>
+    <p><strong>A note on privacy:</strong> All names, identifying details, and some locations in this blog have been changed to protect the identities and privacy of our children and family. The stories are real — the names are not.</p>
+  </div>
+</div>
 <!-- ===== HERO ===== -->
 <section class="hero" id="heroSection">
   <div class="hero-blob-mid"></div>
@@ -1257,13 +1293,14 @@ footer {
             <span class="stat-lbl">Avg Chaos</span>
           </div>
           <div class="stat-box sb4">
-            <span class="stat-num">3yrs</span>
-            <span class="stat-lbl">Of Chaos</span>
+            <span class="stat-num">2 yrs</span>
+            <span class="stat-lbl">Of Chaos (and counting)</span>
           </div>
         </div>
       </div>
 
       <!-- SUBSCRIBE -->
+      <!--
       <div class="sidebar-card subscribe-card">
         <h4>Stay in the loop! 💌</h4>
         <p>New posts, milestone moments, and the occasional chaos update — straight to your inbox.</p>
@@ -1271,7 +1308,7 @@ footer {
         <button class="sub-btn" onclick="handleSubscribe()">Subscribe!</button>
         <div class="sub-success" id="subSuccess">🎉 You're in! Welcome to the chaos family!</div>
       </div>
-
+    -->
       <!-- CATEGORIES -->
       <div class="sidebar-card cats-sidebar">
         <h4>Browse by Category</h4>
